@@ -1,0 +1,16 @@
+{
+  "workshops" : {
+    "first" : {
+      "title" : "Google improvements",
+      "description" : "Explanation of new Google Capabilities."
+    },
+    "second" : {
+      "title" : "Android Features",
+      "description" : "Description of all new Android features"
+    },
+    "third" : {
+      "title" : "Party",
+      "description" : "Party Time!"
+    }
+  }
+}

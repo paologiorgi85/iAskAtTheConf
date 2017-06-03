@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WorkshopsComponent } from './components/workshops/workshops.component';
+import { WorkshopComponent } from './components/workshop/workshop.component';
 
 /*
 const firebaseAuthConfig = {
@@ -25,7 +26,8 @@ const firebaseAuthConfig = {
 
 const AppsRoutes: Routes = [
   { path:'', component: HomeComponent},
-  { path:'workshops', component: WorkshopsComponent}
+  { path:'workshops', component: WorkshopsComponent},
+  { path:'workshop/:id', component: WorkshopComponent}
 ]
 
 @NgModule({
@@ -33,7 +35,8 @@ const AppsRoutes: Routes = [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    WorkshopsComponent
+    WorkshopsComponent,
+    WorkshopComponent
   ],
   imports: [
     BrowserModule,

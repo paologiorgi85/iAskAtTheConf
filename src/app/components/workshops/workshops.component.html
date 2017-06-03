@@ -1,3 +1,7 @@
-<p>
-  workshops works!
-</p>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let workshop of workshops">
+    <a [routerLink]="['/workshop/'+workshop.$key]">
+      {{workshop.title}}
+    </a>
+  </li>
+</ul>

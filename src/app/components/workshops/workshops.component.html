@@ -1,3 +1,7 @@
+<h2 class="page-header">
+  <b>List of Workshops: </b>
+</h2>
+
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let workshop of workshops">
     <a [routerLink]="['/workshop/'+workshop.$key]">

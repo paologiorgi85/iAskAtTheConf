@@ -15,7 +15,8 @@
         <li><a [routerLink]="['/workshops']">Workshops</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right ">
-        <li><a href="">Login</a></li>
+        <li><a (click)="login()">Login</a></li>
+        <li><a (click)="logout()">Logout</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 @Injectable()
 export class FirebaseService {
@@ -7,9 +9,6 @@ export class FirebaseService {
   workshops: FirebaseListObservable<any[]>;
 
   constructor(private db: AngularFireDatabase) {
-    /*
-      this.workshops = db.list('/workshops');
-    */
   }
 
   getWorkshops () {

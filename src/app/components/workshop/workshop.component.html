@@ -23,9 +23,7 @@
     </div>
 
     <div *ngFor="let q of listOfQuestions; let i=index">
-      <div class="list-group-item"
-           *ngIf="
-                    emailLoggedUser == q.email">
+      <div class="list-group-item">
         <h4 class="list-group-item-heading"><strong>{{q.author}}</strong>
           <h6>
             <strong>mail:</strong> {{q.email}}</h6>

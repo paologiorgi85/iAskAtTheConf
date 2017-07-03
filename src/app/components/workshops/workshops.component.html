@@ -1,11 +1,22 @@
-<h2 class="page-header">
-  <b>List of Workshops: </b>
-</h2>
-
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let workshop of workshops">
-    <a [routerLink]="['/workshop/'+workshop.$key]">
-      {{workshop.title}}
-    </a>
-  </li>
-</ul>
+<div *ngIf="workshops">
+  <h2 class="page-header">
+    <b>List of Speachees: </b>
+  </h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let workshop of workshops">
+      <a [routerLink]="['/workshop/'+workshop.$key]">
+        {{workshop.title}}
+      </a>
+    </li>
+  </ul>
+</div>
+<div *ngIf="!workshops">
+  <h2 class="page-header">
+    Loading ...
+  </h2>
+  <br>
+  <br>
+  <div>
+    <sk-chasing-dots></sk-chasing-dots>
+  </div>
+</div>

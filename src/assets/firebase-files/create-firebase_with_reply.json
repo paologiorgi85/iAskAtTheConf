@@ -1,0 +1,41 @@
+{
+  "workshops" : {
+    "efiowviorioveriov" : {
+      "description" : "Explanation of new Google Capabilities.",
+      "id" : "first",
+      "questions" : [ {
+        "answers" : [ {
+          "answer" : "The speaker is Mario Rossi",
+          "author" : "Paolo Giorgi"
+        }, {
+          "answer" : "Ok thank you",
+          "email"  : "lsequi@menarini.it",
+          "author" : "Leonardo Sequi"
+        } ],
+        "author" : "Leonardo Sequi",
+        "email"  : "lsequi@menarini.it",
+        "question" : "Who is the speaker?"
+      }, {
+        "answers" : [ {
+          "answer" : "The next topic is Gandalf powered by Google",
+          "email"  : "lsequi@menarini.it",
+          "author" : "Leonardo Sequi"
+        } ],
+        "author" : "Paolo Giorgi",
+        "email"  : "paolo.giorgi85@gmail.com",
+        "question" : "Which is the next topic?"
+      } ],
+      "title" : "Google improvements"
+    },
+    "ewfkjnewjkwen" : {
+      "description" : "Description of all new Android features",
+      "id" : "second",
+      "title" : "Android Features"
+    },
+    "sadijasdoijasdi" : {
+      "description" : "Party Time!",
+      "id" : "third",
+      "title" : "Party"
+    }
+  }
+}

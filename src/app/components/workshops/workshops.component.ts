@@ -14,6 +14,7 @@ export class WorkshopsComponent implements OnInit {
 
   ngOnInit() {
     this.firebaService.getWorkshops().subscribe(workshops => {
+      console.log('Object Workshop :');
       console.log(workshops);
       this.workshops = workshops;
     });

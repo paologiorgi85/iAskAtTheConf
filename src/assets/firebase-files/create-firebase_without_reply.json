@@ -1,0 +1,36 @@
+{
+  "workshops" : {
+    "efiowviorioveriov" : {
+      "title" : "Google improvements",
+      "description" : "Explanation of new Google Capabilities.",
+      "id" : "first",
+      "questions" : [          
+        {
+            "author" : "Leonardo Sequi",
+            "email"  : "lsequi@menarini.it",
+            "message" : "Who is the speaker?"
+        },
+        {
+            "author" : "Paolo Giorgi",
+            "email"  : "paolo.giorgi85@gmail.com",
+            "message" : "Which is the next topic?"
+        },
+        {
+            "author" : "Mario Rossi",
+            "email"  : "mario.rossi@menarini.it",
+            "message" : "Where is my cardglass?"
+        }
+      ]
+    },
+    "ewfkjnewjkwen" : {
+      "description" : "Description of all new Android features",
+      "id" : "second",
+      "title" : "Android Features"
+    },
+    "sadijasdoijasdi" : {
+      "description" : "Party Time!",
+      "id" : "third",
+      "title" : "Party"
+    }
+  }
+}

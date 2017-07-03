@@ -17,11 +17,15 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WorkshopsComponent } from './components/workshops/workshops.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
+import { QuestionComponent } from './components/question/question.component';
+
+import { NgSpinKitModule } from 'ng-spin-kit'
 
 const AppsRoutes: Routes = [
   { path:'', component: HomeComponent},
   { path:'workshops', component: WorkshopsComponent},
-  { path:'workshop/:id', component: WorkshopComponent}
+  { path:'workshop/:id', component: WorkshopComponent},
+  { path:'workshop/:id/questions/:qid', component: QuestionComponent}
 ]
 
 @NgModule({
@@ -30,7 +34,8 @@ const AppsRoutes: Routes = [
     HomeComponent,
     NavbarComponent,
     WorkshopsComponent,
-    WorkshopComponent
+    WorkshopComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
@@ -40,8 +45,10 @@ const AppsRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    FlashMessagesModule
+    FlashMessagesModule,
+    NgSpinKitModule
   ],
+  exports: [ RouterModule ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
 })

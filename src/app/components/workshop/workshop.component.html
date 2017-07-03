@@ -7,18 +7,34 @@
   <h5 class="page-header">
     <b>Description: </b> {{workshop.description}}
   </h5>
-
   <h2 class="page-header">
     <b>List of Questions: </b>
   </h2>
 
   <div class="list-group">
-    <a href="#" class="list-group-item active">
-      Cras justo odio
-    </a>
-    <a href="#" class="list-group-item">Dapibus ac facilisis in
-    </a>
-    <a href="#" class="list-group-item">Morbi leo risus
-    </a>
+    <!--a [routerLink]="['/workshop/'+workshop.$key+'/questions/'+i]" class="list-group-item" *ngFor="let q of workshop.questions; let i=index"-->
+    <div class="list-group-item">
+      <input  class="list-group-item-text"
+              placeholder='Insert here your question'
+              [(ngModel)]="newItem" (keyup.enter)="addItem()"
+              required
+      >
+      <button class="add" (click)="addItem()">Add</button>
+    </div>
+
+    <div *ngFor="let q of listOfQuestions; let i=index">
+      <div class="list-group-item"
+           *ngIf="
+                    emailLoggedUser == q.email">
+        <h4 class="list-group-item-heading"><strong>{{q.author}}</strong>
+          <h6>
+            <strong>mail:</strong> {{q.email}}</h6>
+        </h4>
+        <p class="list-group-item-text">{{q.message}}</p>
+        <button class="remove" (click)="removeItem(q)" *ngIf="emailLoggedUser == q.email">Remove</button>
+      </div>
+    </div>
+    <!--/a-->
   </div>
+
 </div>
